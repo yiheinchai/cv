@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yi Hein Chai - ML Engineer & Medical Student</title>
+    <style>
+        * {
+            margin:  0;
+            padding: 0;
+            box-sizing:  border-box;
+        }
+
+        body {
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background:  linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow:  0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align:  center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        . header . subtitle {
+            font-size:  1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .header . education {
+            font-size: 1rem;
+            opacity: 0.85;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            border-bottom:  3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .project {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #f7fafc;
+            border-radius:  8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .project h3 {
+            font-size: 1.3rem;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .project . repo-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        . project .repo-link:hover {
+            text-decoration: underline;
+        }
+
+        .project p {
+            margin-bottom: 0.8rem;
+            color: #4a5568;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size:  0.85rem;
+            font-weight:  500;
+        }
+
+        .highlight {
+            background: #fef3c7;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-weight:  600;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        ul li {
+            margin-bottom:  0.5rem;
+            color: #4a5568;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Yi Hein Chai</h1>
+            <p class="subtitle">ML Engineer & Researcher</p>
+            <p class="education">5th Year Medical Student | University College London</p>
+        </div>
+
+        <div class="content">
+            <!-- Core ML Skills -->
+            <div class="section">
+                <h2>Core Technical Skills</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">Deep Learning from Scratch</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">Contrastive Learning</span>
+                    <span class="skill-tag">MEG/Neuroimaging</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">React/TypeScript</span>
+                    <span class="skill-tag">Python</span>
+                </div>
+            </div>
+
+            <!-- Featured Projects -->
+            <div class="section">
+                <h2>Featured Projects</h2>
+
+                <!-- Intuitive. AI -->
+                <div class="project">
+                    <h3>🧠 Intuitive.AI - Deep Learning from Scratch</h3>
+                    <a href="https://github.com/yiheinchai/intuitive. ai" class="repo-link" target="_blank">
+                        github.com/yiheinchai/intuitive.ai →
+                    </a>
+                    <p>Built foundational deep learning architectures <span class="highlight">from scratch</span> to deeply understand neural network fundamentals. </p>
+                    
+                    <p><strong>Implementations:</strong></p>
+                    <ul>
+                        <li><strong>Micrograd: </strong> Built automatic differentiation engine from scratch - the foundation for backpropagation</li>
+                        <li><strong>ResNet:</strong> Implemented residual networks with skip connections, batch normalization, and identity downsampling</li>
+                        <li><strong>InceptionNet:</strong> Created inception modules with parallel convolutional paths and dimension reduction</li>
+                        <li><strong>LeNet:</strong> Classic CNN architecture for MNIST digit classification</li>
+                        <li><strong>Batch Normalization:</strong> Custom implementation with exponential moving averages for training/inference modes</li>
+                    </ul>
+
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul>
+                        <li>Trained ResNet-18/34/50 variants on CIFAR-10 with custom data augmentation</li>
+                        <li>Implemented proper initialization schemes (Kaiming/Xavier) for stable training</li>
+                        <li>Achieved deep understanding of gradient flow, vanishing gradients, and optimization</li>
+                    </ul>
+                </div>
+
+                <!-- MEG Encoder -->
+                <div class="project">
+                    <h3>🔬 MEG Encoder - Contrastive Learning for Neuroimaging</h3>
+                    <a href="https://github.com/yiheinchai/meg" class="repo-link" target="_blank">
+                        github.com/yiheinchai/meg →
+                    </a>
+                    <p>Developed self-supervised learning system for magnetoencephalography (MEG) brain signals using <span class="highlight">contrastive learning via NTXentLoss</span>.</p>
+                    
+                    <p><strong>Technical Implementation:</strong></p>
+                    <ul>
+                        <li><strong>Dataset:</strong> CamCAN MEG resting-state data (700+ subjects, 306 channels @ 1000Hz)</li>
+                        <li><strong>Architecture:</strong> 1D CNN encoder (Conv1D → ReLU → AdaptiveAvgPool → FC) projecting 306-channel timeseries to 128D embeddings</li>
+                        <li><strong>NTXent Contrastive Loss:</strong> Trained pairs of augmented windows from same subject to have similar embeddings</li>
+                        <li><strong>Data Pipeline:</strong> Built HDF5-based caching system eliminating I/O bottlenecks (100x speedup over raw . fif files)</li>
+                        <li><strong>Preprocessing:</strong> Z-score normalization, sliding window extraction (2s windows, 500ms stride), Gaussian noise augmentation</li>
+                    </ul>
+
+                    <p><strong>Engineering Highlights:</strong></p>
+                    <ul>
+                        <li>Optimized training pipeline achieving ~95% GPU utilization vs ~40% baseline</li>
+                        <li>Implemented custom batch samplers ensuring unique subjects per batch for effective contrastive learning</li>
+                        <li>UMAP visualization of learned embeddings showing clustering by subject demographics</li>
+                    </ul>
+                </div>
+
+                <!-- Makemore - NLP from Scratch -->
+                <div class="project">
+                    <h3>✍️ Makemore - Character-Level Language Models</h3>
+                    <a href="https://github.com/yiheinchai/kingscrosshacklab" class="repo-link" target="_blank">
+                        github. com/yiheinchai/kingscrosshacklab/projects/makemore →
+                    </a>
+                    <p>Built multiple generative models <span class="highlight">from scratch using ktorch</span> (custom PyTorch abstractions) to generate names and pharmaceutical drug names.</p>
+                    
+                    <p><strong>Models Implemented:</strong></p>
+                    <ul>
+                        <li><strong>Bigram Model:</strong> Simple character-level model learning pairwise statistics</li>
+                        <li><strong>MLP Name Generator:</strong> Multi-layer perceptron with custom embedding layer and batch normalization</li>
+                        <li>Trained on diverse datasets: common names, pharmaceutical drug names (Abilify, Actos, etc.)</li>
+                    </ul>
+
+                    <p><strong>ktorch - Custom Deep Learning Framework:</strong></p>
+                    <ul>
+                        <li>Built Linear layers with Kaiming initialization from scratch</li>
+                        <li>Implemented BatchNorm with running statistics and momentum</li>
+                        <li>Created Tanh activation and gradient tracking</li>
+                        <li>Manual backpropagation and parameter updates</li>
+                    </ul>
+
+                    <p><strong>Production Features:</strong></p>
+                    <ul>
+                        <li>Full-stack React/TypeScript web interface deployed on Cloudflare Pages</li>
+                        <li>Interactive "Real vs AI" drug name guessing game</li>
+                        <li>Temperature-controlled generation for creativity tuning</li>
+                    </ul>
+                </div>
+
+                <!-- Kings Cross Hack Lab -->
+                <div class="project">
+                    <h3>🚀 Kings Cross Hack Lab - Community Building</h3>
+                    <a href="https://github.com/yiheinchai/kingscrosshacklab" class="repo-link" target="_blank">
+                        github.com/yiheinchai/kingscrosshacklab →
+                    </a>
+                    <p>Founded and built digital presence for weekly builders collective in London. </p>
+                    
+                    <ul>
+                        <li>Tech Stack: React 19, TypeScript, Vite 7, TanStack Router, Cloudflare Pages</li>
+                        <li>Custom CSS animations with grid backgrounds and glitch text effects</li>
+                        <li>Philosophy: "Optimize for Fun" - sanctuary for passion projects</li>
+                    </ul>
+                </div>
+
+                <!-- NotMonad -->
+                <div class="project">
+                    <h3>⚡ NotMonad - Functional Programming Library</h3>
+                    <a href="https://github.com/yiheinchai/notmonad" class="repo-link" target="_blank">
+                        github.com/yiheinchai/notmonad →
+                    </a>
+                    <p>Python library for pipeline-style data transformations with monad-inspired error handling.</p>
+                    
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li><strong>Function Chaining:</strong> Succinct syntax <code>chain(val)(func1)(func2)()</code> avoiding intermediate variables</li>
+                        <li><strong>Railway Error Handling:</strong> Maybe monad for graceful failure propagation</li>
+                        <li><strong>Debug Monad:</strong> Trace execution with args/returns at each pipeline step</li>
+                        <li><strong>Composable Monads:</strong> Combine multiple monads (debug + log + maybe) for complex behaviors</li>
+                        <li><strong>Custom Monads:</strong> Extensible decorator system for side effects</li>
+                    </ul>
+
+                    <p>Designed for data science workflows requiring clear error handling and debugging in transformation pipelines.</p>
+                </div>
+            </div>
+
+            <!-- Education & Background -->
+            <div class="section">
+                <h2>Education & Background</h2>
+                <div class="project">
+                    <h3>University College London</h3>
+                    <p><strong>MBBS Medicine</strong> - 5th Year Medical Student</p>
+                    <p>Combining clinical medicine with deep learning research, particularly interested in medical imaging and neuroscience applications.</p>
+                </div>
+            </div>
+
+            <!-- Technical Philosophy -->
+            <div class="section">
+                <h2>Technical Philosophy</h2>
+                <p style="color: #4a5568; line-height: 1.8;">
+                    I believe in <strong>building from first principles</strong>. Rather than just using frameworks, I've implemented fundamental ML architectures from scratch - from autograd engines to transformers.  This deep understanding enables me to debug complex issues, optimize performance, and innovate on existing architectures.  My medical background gives me unique insight into healthcare ML applications, particularly neuroimaging and clinical decision support systems.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
